@@ -62,6 +62,3 @@ AND month = 7
 AND day = 29
 ORDER BY hour ASC
 LIMIT 1;
-
-
-
