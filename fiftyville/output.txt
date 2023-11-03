@@ -75,3 +75,15 @@
 | exit     | FLFN3W0       | Daniel  |
 | exit     | 4963D92       | Judith  |
 +----------+---------------+---------+
++---------+------------------+
+|  name   | transaction_type |
++---------+------------------+
+| Bruce   | withdraw         |
+| Diana   | withdraw         |
+| Brooke  | withdraw         |
+| Kenny   | withdraw         |
+| Iman    | withdraw         |
+| Luca    | withdraw         |
+| Taylor  | withdraw         |
+| Benista | withdraw         |
++---------+------------------+
