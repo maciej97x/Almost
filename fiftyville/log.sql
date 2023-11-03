@@ -51,4 +51,7 @@ AND day = 28
 ORDER BY hour ASC
 Limit 1;
 
+UPDATE flights
+SER
+
 
