@@ -18,8 +18,8 @@
             for (let i = 0; i < incorrect.lenght; i++)
             {
                 incorrect[i].addEventListener("click", function() {
-                    correct.style.backgroundColor = "red";
-                    document.querySelector("#answer2").innerHTML = "Correct!";
+                    incorrect[i].style.backgroundColor = "red";
+                    document.querySelector("#answer2").innerHTML = "Incorrect!";
             });
             }
             document.querySelector("#check").addEventListener
