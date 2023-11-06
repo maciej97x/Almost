@@ -11,10 +11,18 @@
         <button id="green">G</button>
         <button id="blue">B</button>
         <script>
+
             let body = document.querySelector("body");
             document.querySelector("#red").addEventListener("click", function() {
                 body.style.background = "red";
             });
+            document.querySelector("#green").addEventListener("click", function() {
+                body.style.background = "green";
+            });
+            document.querySelector("#blue").addEventListener("click", function() {
+                body.style.background = "blue";
+            });
+
         </script>
     </body>
 </html>
