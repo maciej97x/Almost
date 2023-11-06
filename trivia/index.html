@@ -14,11 +14,11 @@
                 document.querySelector("#answer1").innerHTML = "Correct!";
             });
 
-            let incorrect = document.querySelectorAll(".incorrect");
+            let incorrects = document.querySelectorAll(".incorrect");
             for (let i = 0; i < incorrect.lenght; i++)
             {
-                incorrect[i].addEventListener("click", function() {
-                    incorrect[i].style.backgroundColor = "red";
+                incorrects[i].addEventListener("click", function() {
+                    incorrects[i].style.backgroundColor = "red";
                     document.querySelector("#answer1").innerHTML = "Incorrect!";
             });
             }
