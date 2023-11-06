@@ -13,6 +13,15 @@
                 correct.style.backgroundColor = "green"l
                 document.querySelector("#answer1").innerHTML = "Correct!";
             });
+
+            let incorrect = document.querySelectorAll("incorrect");
+            for (let i = 0; i < incorrect.lenght; i++)
+            {
+                incorrect[i].addEventListener("click", function() {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector("#answer2").innerHTML = "Correct!";
+            });
+            }
           })
         </script>
     </head>
