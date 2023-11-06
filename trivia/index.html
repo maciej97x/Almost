@@ -6,37 +6,34 @@
         <link href="styles.css" rel="stylesheet">
         <title>Trivia!</title>
         <script>
-                  document.addEventListener('DOMContentLoaded', function() {
+               document.addEventListener('DOMContentLoaded', function() {
 
-
-                    let correctColor = document.querySelector('.correct-color');
-            correctColor.addEventListener('click', function() {
-                correctColor.style.backgroundColor = 'green';
-                document.querySelector('#feedback-color').innerHTML = 'Correct!';
-                });
-
-            // When click  on incorrect answer button, set the red color
-            let incorrects = document.querySelectorAll('.incorrect-color');
-            for(let i = 0; i < incorrects.length; i++)
-            {
-                incorrects[i].addEventListener('click', function() {
-                incorrects[i].style.backgroundColor = 'red';
-                document.querySelector('#feedback-color').innerHTML = 'Incorrect';
-                });
-            }
-
-            document.querySelector('#check').addEventListener('click', function(){
-            let input = document.querySelector('input');
-            if(input.value == '10'){
-                input.style.backgroundColor = 'green';
-                document.querySelector('#feedback2').innerHTML = 'Correct!';
-            } else {
-                input.style.backgroundColor = 'red';
-                document.querySelector('#feedback2').innerHTML = 'Incorrect';
-            }
+            let correct = document.querySelector('.correct');
+            correct.addEventListener('click', function() {
+                correct.style.backgroundColor = 'green';
+                document.querySelector('#answer1').innerHTML = 'Correct!';
             });
 
-});
+            let incorrect = document.querySelectorAll('.incorrect');
+            for (let i = 0; i < incorrect.lenght; i++)
+            {
+                incorrect[i].addEventListener('click', function() {
+                    incorrect[i].style.backgroundColor = 'red';
+                    document.querySelector('#answer1').innerHTML = 'Incorrect!';
+            });
+            }
+            document.querySelector("#check").addEventListener
+            ("click", function () {
+                let input = document.querySelector("input");
+                if (input.value.tolowerCase() == "switzerland") {
+                    input.style.backgroundColor = "green";
+                    document.querySelector("#answer2").innerHTML = "Correct!"
+                } else {
+                    input.style.bacgroundColor = "red";
+                    document.querySelector("answer2").innerHTML = "Incorrect!";
+                }
+            });
+          })
         </script>
     </head>
     <body>
@@ -49,13 +46,13 @@
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
-                <button class="incorrect-color" type="text">6 people per 1 sheep</button>
-                <button class="incorrect-color" type="text">3 people per 1 sheep</button>
-                <button class="incorrect-color" type="text">1 person per 1 sheep</button>
-                <button class="incorrect-color" type="text">1 person per 3 sheep</button>
-                <button class="correct-color" type="text">1 person per 6 sheep</button>
+                <button class="incorrect" type="text">6 people per 1 sheep</button>
+                <button class="incorrect" type="text">3 people per 1 sheep</button>
+                <button class="incorrect" type="text">1 person per 1 sheep</button>
+                <button class="incorrect" type="text">1 person per 3 sheep</button>
+                <button class="correct" type="text">1 person per 6 sheep</button>
 
-                <p id="feedback-color"></p>
+                <p id="answer1"></p>
 
             </div>
 
@@ -67,7 +64,7 @@
                     <input type="text" placeholder="Country">
                     <button id="check">Check Answer</button>
 
-                    <p id="feedback2"></p>
+                    <p id="answer2"></p>
                 </form>
             </div>
         </div>
