@@ -9,7 +9,7 @@
                document.addEventListener("DOMContentLoaded", function() {
 
             let correct = document.querySelector(".correct");
-            correct.addEventListener("click", function(event) {
+            correct.addEventListener("click", function() {
                 correct.style.backgroundColor = "green";
                 document.querySelector("#answer1").innerHTML = "Correct!";
             });
@@ -17,7 +17,7 @@
             let incorrect = document.querySelectorAll(".incorrect");
             for (let i = 0; i < incorrect.lenght; i++)
             {
-                incorrect[i].addEventListener("click", function(event) {
+                incorrect[i].addEventListener("click", function() {
                     incorrect[i].style.backgroundColor = "red";
                     document.querySelector("#answer1").innerHTML = "Incorrect!";
             });
